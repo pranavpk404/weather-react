@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className={darkTheme ? "dark" : "light "}>
-      <section className="font-Poppins h-screen  dark:bg-gray-800">
+      <section className="font-Poppins dark:bg-darkBG">
         <Navbar
           darkTheme={darkTheme}
           setDarkTheme={setDarkTheme}

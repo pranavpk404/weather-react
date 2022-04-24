@@ -25,20 +25,20 @@ const Navbar = ({ darkTheme, setDarkTheme, setLocation, locationData }) => {
   }, [locationData]);
 
   return (
-    <nav className="p-5 flex flex-wrap sm:justify-between justify-center items-center ">
+    <nav className="p-5 flex flex-wrap sm:justify-between justify-center items-center mb-5">
       <div className="flex justify-between items-center w-screen">
         <div>
           <input
             value={text}
             type="text"
             id="searchBar"
-            className="sm:w-96 w-80 h-10 dark:bg-gray-700 bg-gray-100 dark:text-white rounded-full shadow-sm outline-none p-6 text-black hover:shadow-lg"
+            className="sm:w-96 w-80 h-10 dark:bg-darkBG2 bg-gray-100 dark:text-white rounded-full shadow-sm outline-none p-6 text-black hover:shadow-lg"
             placeholder="🔎 Search Your City"
             onChange={(e) => setText(e.target.value)}
           />
         </div>
         {locationGotten ? (
-          <p className="text-xl">{`${locationData.city}, ${locationData.region}, ${locationData.country}`}</p>
+          <p className="text-xl font-medium dark:text-gray-50">{`${locationData.city}, ${locationData.region}, ${locationData.country}`}</p>
         ) : null}
         <button
           className="text-xl rounded-full p-2 hover:shadow-lg hover:shadow-slate-900 dark:hover:shadow-slate-50"
