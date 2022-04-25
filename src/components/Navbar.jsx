@@ -37,9 +37,6 @@ const Navbar = ({ darkTheme, setDarkTheme, setLocation, locationData }) => {
             onChange={(e) => setText(e.target.value)}
           />
         </div>
-        {locationGotten ? (
-          <p className="text-xl font-medium dark:text-gray-50">{`${locationData.city}, ${locationData.region}, ${locationData.country}`}</p>
-        ) : null}
         <button
           className="text-xl rounded-full p-2 hover:shadow-lg hover:shadow-slate-900 dark:hover:shadow-slate-50"
           type="button"
@@ -51,6 +48,9 @@ const Navbar = ({ darkTheme, setDarkTheme, setLocation, locationData }) => {
           {darkTheme ? "💡" : "🌙"}
         </button>
       </div>
+      {locationGotten ? (
+        <p className="text-xl font-medium dark:text-gray-50 mx-auto">{`${locationData.city}, ${locationData.region}, ${locationData.country}`}</p>
+      ) : null}
     </nav>
   );
 };
