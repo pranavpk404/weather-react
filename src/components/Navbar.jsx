@@ -49,7 +49,7 @@ const Navbar = ({ darkTheme, setDarkTheme, setLocation, locationData }) => {
         </button>
       </div>
       {locationGotten ? (
-        <p className="text-xl font-medium dark:text-gray-50 mx-auto">{`${locationData.city}, ${locationData.region}, ${locationData.country}`}</p>
+        <p className="text-xl mt-5 font-medium dark:text-gray-50 mx-auto">{`${locationData.city}, ${locationData.region}, ${locationData.country}`}</p>
       ) : null}
     </nav>
   );
