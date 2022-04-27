@@ -44,6 +44,7 @@ const Navbar = ({ darkTheme, setDarkTheme, setLocation, locationData }) => {
             setDarkTheme(!darkTheme);
             localStorage.setItem("darkTheme", !darkTheme);
           }}
+          s
         >
           {darkTheme ? "💡" : "🌙"}
         </button>

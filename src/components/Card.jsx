@@ -5,8 +5,8 @@ const Card = ({ description, lowTemp, maxTemp, date, icon }) => {
         <div className="rounded-xl  dark:bg-darkBG2 bg-gray-100 dark:text-gray-100 text-gray-900 flex">
           <div className="p-6">
             <p className="text-left">{date}</p>
-            <img className="mx-auto my-5" src={icon} />
-            <h2 className="text-xl font-semibold mb-3">{`${description}`}</h2>
+            <img className="mx-auto my-5" src={icon} alt={description} />
+            <h2 className="text-xl font-semibold mb-3">{description}</h2>
             <p className="text-lg font-medium mb-3">
               {`Low Temp:${Math.round(lowTemp)}°C`}
             </p>
