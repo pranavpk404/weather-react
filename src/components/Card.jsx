@@ -1,6 +1,6 @@
 const Card = ({ description, lowTemp, maxTemp, date, icon }) => {
   return (
-    <section className="rounded-xl  text-center mx-2 my-4 hover:shadow-lg duration-200  hover:shadow-gray-900  dark:hover:shadow-gray-50 ">
+    <section className="rounded-xl text-center mx-2 my-4 hover:shadow-lg duration-200  hover:shadow-gray-900 dark:hover:shadow-gray-50 ">
       <div className="container mx-auto flex ">
         <div className="rounded-xl  dark:bg-darkBG2 bg-gray-100 dark:text-gray-100 text-gray-900 flex">
           <div className="p-6">
